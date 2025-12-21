@@ -1,0 +1,8 @@
+button {
+    text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #1E1E1E;
+}
+`button:focus, button:active, button:hover {
+    background-color: #00ffff;
+}

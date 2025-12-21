@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 4.0)
+project(space)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(${PROJECT_NAME} src/main.cpp)
+
+find_package(SDL3 REQUIRED CONFIG)
+
+target_link_libraries(viewer PRIVATE SDL3::SDL3 SDL3_image::SDL3_image)

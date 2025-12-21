@@ -1,0 +1,51 @@
+
+headerbar {
+    background: #24292E;
+    color: #c9d1d9;
+}
+
+
+window {
+    background: #24292E;
+    color: #c9d1d9;
+}
+
+
+entry, button {
+    background: #24292E;
+    color: #c9d1d9;
+}
+
+/* === СТИЛИЗАЦИЯ DROPDOWN (GtkComboBox, GtkPopover) === */
+combobox, popover, GtkComboBox, GtkPopover {
+    background-color: #24292E;
+    color: #24292E;
+    border-radius: 6px;
+    border: 1px solid #24292E;
+}
+
+/* Стиль элементов списка внутри выпадающего меню */
+combobox menu, popover menu, GtkComboBox menu, GtkPopover menu {
+    background-color: #24292E;
+    color: #24292E;
+}
+
+/* Элементы выпадающего списка */
+combobox menu menuitem, popover menu menuitem, GtkComboBox menu menuitem, GtkPopover menu menuitem {
+    background-color: #24292E;
+    color: #24292E;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* Наведение на элемент списка */
+combobox menu menuitem:hover, popover menu menuitem:hover, GtkComboBox menu menuitem:hover, GtkPopover menu menuitem:hover {
+    background-color: #24292E;
+    color: white;
+}
+
+/* Выбранный элемент */
+combobox menu menuitem:checked, popover menu menuitem:checked, GtkComboBox menu menuitem:checked, GtkPopover menu menuitem:checked {
+    background-color: #24292E;
+    color: white;
+}

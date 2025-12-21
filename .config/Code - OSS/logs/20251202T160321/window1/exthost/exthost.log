@@ -1,0 +1,6 @@
+2025-12-02 16:03:23.151 [info] Extension host with pid 10807 started
+2025-12-02 16:03:23.151 [info] Skipping acquiring lock for /home/karim/.config/Code - OSS/User/workspaceStorage/763f302ac3b3d1588e2d787e183ca31e.
+2025-12-02 16:03:23.567 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-12-02 16:03:23.596 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-12-02 16:03:23.722 [info] Extension host terminating: renderer closed the MessagePort
+2025-12-02 16:03:23.726 [info] Extension host with pid 10807 exiting with code 0

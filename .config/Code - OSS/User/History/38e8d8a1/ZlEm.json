@@ -1,0 +1,14 @@
+{
+    "window.titleBarStyle": "native",
+    "chat.commandCenter.enabled": false,
+    "workbench.layoutControl.type": "menu",
+    "editor.fontFamily": "'JetBrainsMono Nerd', monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.5,
+    "editor.rulers": [99],
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never"
+}

@@ -1,0 +1,14 @@
+2025-11-08 23:40:23.135 [info] Extension host with pid 92198 started
+2025-11-08 23:40:23.135 [info] Skipping acquiring lock for /home/karim/.config/Code - OSS/User/workspaceStorage/763f302ac3b3d1588e2d787e183ca31e.
+2025-11-08 23:40:23.397 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-11-08 23:40:23.420 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-11-08 23:40:23.694 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-11-08 23:40:23.811 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-11-08 23:40:23.842 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-11-08 23:40:23.896 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-11-08 23:40:24.015 [info] Eager extensions activated
+2025-11-08 23:40:24.020 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-11-08 23:40:24.022 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-11-08 23:40:24.041 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-11-09 00:58:45.030 [info] Extension host terminating: renderer closed the MessagePort
+2025-11-09 00:58:45.037 [info] Extension host with pid 92198 exiting with code 0

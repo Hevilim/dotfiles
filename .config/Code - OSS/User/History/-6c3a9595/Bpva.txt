@@ -1,0 +1,5 @@
+add_subdirectory(SDL)
+
+add_library(vendor)
+
+target_link_libraries(vendor SDL3::SDL3)

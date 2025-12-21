@@ -1,0 +1,3 @@
+add_executable(space src$(PROJECT_NAME))
+
+target_link_libraries(space vendor)

@@ -1,0 +1,42 @@
+
+headerbar {
+    background: #24292E;
+    color: #c9d1d9;
+}
+
+
+window {
+    background: #24292E;
+    color: #c9d1d9;
+}
+
+
+entry, button {
+    background: #24292E;
+    color: #c9d1d9;
+}
+
+button,
+.button,
+GtkButton {
+    background-color: #282C32;
+    color: #282C32;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* Кнопка при наведении */
+button:hover,
+.button:hover,
+GtkButton:hover {
+    background-color: #282C32;
+    color: white;
+}
+
+/* Кнопка при нажатии */
+button:active,
+.button:active,
+GtkButton:active {
+    background-color: #282C32;
+    color: white;
+}

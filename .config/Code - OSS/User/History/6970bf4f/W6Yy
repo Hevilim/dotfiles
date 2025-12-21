@@ -1,0 +1,50 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "spacing": 4,
+  "modules-left": [
+    "hyprland/workspaces",
+    "wlr/taskbar"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "tray",
+    "hyprland/language",
+    "custom/weather",
+    "clock"
+  ],
+  "wlr/taskbar": {
+    "format": "{icon} {title}",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": false,
+    "ignore-pinned": false,
+    "group-by": "workspace",
+    "tooltip-format": "{app_id}: {title}"
+  },
+  "wlr/workspaces": {
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1"
+  },
+  "hyprland/window": {
+    "max-length": 128
+  },
+  "clock": {
+    "format": "{:%c}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "tray": {
+    "spacing": 4
+  },
+  "custom/weather": {
+    "exec": "~/.config/waybar/wittr.sh",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 900
+  }
+}

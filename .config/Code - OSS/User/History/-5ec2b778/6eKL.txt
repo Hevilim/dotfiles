@@ -1,0 +1,221 @@
+cmake_minimum_required(VERSION 4.0)
+project(space)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(${PROJECT_NAME} src/main.cpp)
+
+find_package(SDL3 REQUIRED CONFIG)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3)
+
+karim@archlinux build$ make 
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/karim/Development/space/build
+[100%] Built target space
+karim@archlinux build$ ./space 
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+[100%] Linking CXX executable space
+[100%] Built target space
+karim@archlinux build$ ./space 
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+[100%] Linking CXX executable space
+[100%] Built target space
+karim@archlinux build$ ./space 
+^C
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+[100%] Linking CXX executable space
+[100%] Built target space
+karim@archlinux build$ ./space 
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+[100%] Linking CXX executable space
+[100%] Built target space
+karim@archlinux build$ ./space 
+^C
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+/home/karim/Development/space/src/main.cpp: In function ‘int main(int, char**)’:
+/home/karim/Development/space/src/main.cpp:16:61: error: invalid conversion from ‘SDL_Window**’ to ‘SDL_WindowFlags’ {aka ‘long unsigned int’} [-fpermissive]
+   16 |     if (!SDL_CreateWindowAndRenderer("Hello SDL", 320, 240, &window, &renderer)) {
+      |                                                             ^~~~~~~
+      |                                                             |
+      |                                                             SDL_Window**
+/home/karim/Development/space/src/main.cpp:16:70: error: cannot convert ‘SDL_Renderer**’ to ‘SDL_Window**’
+   16 |     if (!SDL_CreateWindowAndRenderer("Hello SDL", 320, 240, &window, &renderer)) {
+      |                                                                      ^~~~~~~~~
+      |                                                                      |
+      |                                                                      SDL_Renderer**
+In file included from /usr/include/SDL3/SDL.h:75,
+                 from /home/karim/Development/space/src/main.cpp:1:
+/usr/include/SDL3/SDL_render.h:211:147: note: initializing argument 5 of ‘bool SDL_CreateWindowAndRenderer(const char*, int, int, SDL_WindowFlags, SDL_Window**, SDL_Renderer**)’
+  211 | ateWindowAndRenderer(const char *title, int width, int height, SDL_WindowFlags window_flags, SDL_Window **window, SDL_Renderer **renderer);
+      |                                                                                              ~~~~~~~~~~~~~^~~~~~
+make[2]: *** [CMakeFiles/space.dir/build.make:79: CMakeFiles/space.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/space.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+[100%] Linking CXX executable space
+[100%] Built target space
+karim@archlinux build$ ./space 
+karim@archlinux build$ ./space 
+karim@archlinux build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  Makefile  sample.bmp  space
+karim@archlinux build$ make clean
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+/home/karim/Development/space/src/main.cpp:2:10: fatal error: SDL3_image/SDL_image.h: No such file or directory
+    2 | #include <SDL3_image/SDL_image.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/space.dir/build.make:79: CMakeFiles/space.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/space.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+/home/karim/Development/space/src/main.cpp:2:10: fatal error: SDL3/SDL_image.h: No such file or directory
+    2 | #include <SDL3/SDL_image.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/space.dir/build.make:79: CMakeFiles/space.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/space.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+/home/karim/Development/space/src/main.cpp: In function ‘int main(int, char**)’:
+/home/karim/Development/space/src/main.cpp:6:14: error: ‘cerr’ is not a member of ‘std’
+    6 |         std::cerr << "SDL_Init error: " << SDL_GetError() << std::endl;
+      |              ^~~~
+/home/karim/Development/space/src/main.cpp:2:1: note: ‘std::cerr’ is defined in header ‘<iostream>’; this is probably fixable by adding ‘#include <iostream>’
+    1 | #include <SDL3/SDL.h>
+  +++ |+#include <iostream>
+    2 | 
+/home/karim/Development/space/src/main.cpp:6:67: error: ‘endl’ is not a member of ‘std’
+    6 |         std::cerr << "SDL_Init error: " << SDL_GetError() << std::endl;
+      |                                                                   ^~~~
+/home/karim/Development/space/src/main.cpp:2:1: note: ‘std::endl’ is defined in header ‘<ostream>’; this is probably fixable by adding ‘#include <ostream>’
+    1 | #include <SDL3/SDL.h>
+  +++ |+#include <ostream>
+    2 | 
+/home/karim/Development/space/src/main.cpp:10:18: error: ‘IMG_INIT_PNG’ was not declared in this scope
+   10 |     if (IMG_Init(IMG_INIT_PNG) == 0) {
+      |                  ^~~~~~~~~~~~
+/home/karim/Development/space/src/main.cpp:10:9: error: ‘IMG_Init’ was not declared in this scope
+   10 |     if (IMG_Init(IMG_INIT_PNG) == 0) {
+      |         ^~~~~~~~
+/home/karim/Development/space/src/main.cpp:11:14: error: ‘cerr’ is not a member of ‘std’
+   11 |         std::cerr << "IMG_Init error: " << IMG_GetError() << std::endl;
+      |              ^~~~
+/home/karim/Development/space/src/main.cpp:11:14: note: ‘std::cerr’ is defined in header ‘<iostream>’; this is probably fixable by adding ‘#include <iostream>’
+/home/karim/Development/space/src/main.cpp:11:44: error: ‘IMG_GetError’ was not declared in this scope; did you mean ‘SDL_GetError’?
+   11 |         std::cerr << "IMG_Init error: " << IMG_GetError() << std::endl;
+      |                                            ^~~~~~~~~~~~
+      |                                            SDL_GetError
+/home/karim/Development/space/src/main.cpp:11:67: error: ‘endl’ is not a member of ‘std’
+   11 |         std::cerr << "IMG_Init error: " << IMG_GetError() << std::endl;
+      |                                                                   ^~~~
+/home/karim/Development/space/src/main.cpp:11:67: note: ‘std::endl’ is defined in header ‘<ostream>’; this is probably fixable by adding ‘#include <ostream>’
+/home/karim/Development/space/src/main.cpp:16:48: error: too many arguments to function ‘SDL_Renderer* SDL_CreateRenderer(SDL_Window*, const char*)’
+   16 |     SDL_Renderer* renderer = SDL_CreateRenderer(window, NULL, 0);
+      |                              ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from /usr/include/SDL3/SDL.h:75,
+                 from /home/karim/Development/space/src/main.cpp:1:
+/usr/include/SDL3/SDL_render.h:246:44: note: declared here
+  246 | extern SDL_DECLSPEC SDL_Renderer * SDLCALL SDL_CreateRenderer(SDL_Window *window, const char *name);
+      |                                            ^~~~~~~~~~~~~~~~~~
+/home/karim/Development/space/src/main.cpp:31:58: error: ‘SDL_DropEvent’ {aka ‘struct SDL_DropEvent’} has no member named ‘file’
+   31 |                     const char* droppedFile = event.drop.file;
+      |                                                          ^~~~
+/home/karim/Development/space/src/main.cpp:32:26: error: ‘cout’ is not a member of ‘std’
+   32 |                     std::cout << "Dropped file: " << droppedFile << std::endl;
+      |                          ^~~~
+/home/karim/Development/space/src/main.cpp:32:26: note: ‘std::cout’ is defined in header ‘<iostream>’; this is probably fixable by adding ‘#include <iostream>’
+/home/karim/Development/space/src/main.cpp:32:74: error: ‘endl’ is not a member of ‘std’
+   32 |                     std::cout << "Dropped file: " << droppedFile << std::endl;
+      |                                                                          ^~~~
+/home/karim/Development/space/src/main.cpp:32:74: note: ‘std::endl’ is defined in header ‘<ostream>’; this is probably fixable by adding ‘#include <ostream>’
+/home/karim/Development/space/src/main.cpp:35:44: error: ‘IMG_Load’ was not declared in this scope
+   35 |                     SDL_Surface* surface = IMG_Load(droppedFile);
+      |                                            ^~~~~~~~
+/home/karim/Development/space/src/main.cpp:37:30: error: ‘cerr’ is not a member of ‘std’
+   37 |                         std::cerr << "IMG_Load error: " << IMG_GetError() << std::endl;
+      |                              ^~~~
+/home/karim/Development/space/src/main.cpp:37:30: note: ‘std::cerr’ is defined in header ‘<iostream>’; this is probably fixable by adding ‘#include <iostream>’
+/home/karim/Development/space/src/main.cpp:37:60: error: ‘IMG_GetError’ was not declared in this scope; did you mean ‘SDL_GetError’?
+   37 |                         std::cerr << "IMG_Load error: " << IMG_GetError() << std::endl;
+      |                                                            ^~~~~~~~~~~~
+      |                                                            SDL_GetError
+/home/karim/Development/space/src/main.cpp:37:83: error: ‘endl’ is not a member of ‘std’
+   37 |                         std::cerr << "IMG_Load error: " << IMG_GetError() << std::endl;
+      |                                                                                   ^~~~
+/home/karim/Development/space/src/main.cpp:37:83: note: ‘std::endl’ is defined in header ‘<ostream>’; this is probably fixable by adding ‘#include <ostream>’
+In file included from /usr/include/SDL3/SDL.h:88:
+/home/karim/Development/space/src/main.cpp:41:25: error: ‘SDL_FreeSurface_renamed_SDL_DestroySurface’ was not declared in this scope
+   41 |                         SDL_FreeSurface(surface);
+      |                         ^~~~~~~~~~~~~~~
+/home/karim/Development/space/src/main.cpp:63:5: error: ‘IMG_Quit’ was not declared in this scope
+   63 |     IMG_Quit();
+      |     ^~~~~~~~
+make[2]: *** [CMakeFiles/space.dir/build.make:79: CMakeFiles/space.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/space.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+karim@archlinux build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  Makefile  sample.bmp
+karim@archlinux build$ rm -rf *
+karim@archlinux build$ ls
+karim@archlinux build$ cmake ..
+-- The C compiler identification is GNU 15.1.1
+-- The CXX compiler identification is GNU 15.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.4.3")
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/karim/Development/space/build
+karim@archlinux build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  Makefile  sample.bmp
+karim@archlinux build$ make
+[ 50%] Building CXX object CMakeFiles/space.dir/src/main.cpp.o
+/home/karim/Development/space/src/main.cpp: In function ‘int main(int, char**)’:
+/home/karim/Development/space/src/main.cpp:17:18: error: ‘IMG_INIT_PNG’ was not declared in this scope; did you mean ‘IMG_isPNG’?
+   17 |     if (IMG_Init(IMG_INIT_PNG) == 0) {
+      |                  ^~~~~~~~~~~~
+      |                  IMG_isPNG
+/home/karim/Development/space/src/main.cpp:17:9: error: ‘IMG_Init’ was not declared in this scope
+   17 |     if (IMG_Init(IMG_INIT_PNG) == 0) {
+      |         ^~~~~~~~
+/home/karim/Development/space/src/main.cpp:18:89: error: ‘IMG_GetError’ was not declared in this scope; did you mean ‘SDL_GetError’?
+   18 |         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't initialize SDL_image: %s", IMG_GetError());
+      |                                                                                         ^~~~~~~~~~~~
+      |                                                                                         SDL_GetError
+/home/karim/Development/space/src/main.cpp:39:59: error: ‘SDL_DropEvent’ {aka ‘struct SDL_DropEvent’} has no member named ‘file’
+   39 |                     const char* dropped_file = event.drop.file;
+      |                                                           ^~~~
+/home/karim/Development/space/src/main.cpp:44:96: error: ‘IMG_GetError’ was not declared in this scope; did you mean ‘SDL_GetError’?
+   44 |                         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Failed to load image: %s", IMG_GetError());
+      |                                                                                                ^~~~~~~~~~~~
+      |                                                                                                SDL_GetError
+In file included from /usr/include/SDL3/SDL.h:88,
+                 from /home/karim/Development/space/src/main.cpp:1:
+/home/karim/Development/space/src/main.cpp:50:25: error: ‘SDL_FreeSurface_renamed_SDL_DestroySurface’ was not declared in this scope
+   50 |                         SDL_FreeSurface(surface);
+      |                         ^~~~~~~~~~~~~~~
+/home/karim/Development/space/src/main.cpp:72:5: error: ‘IMG_Quit’ was not declared in this scope
+   72 |     IMG_Quit();
+      |     ^~~~~~~~
+make[2]: *** [CMakeFiles/space.dir/build.make:79: CMakeFiles/space.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/space.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2

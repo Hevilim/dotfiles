@@ -1,0 +1,14 @@
+CXX = g++
+CXXFLAGS = -std=c++17 -O2 $(shell pkg-config --cflags glfw3 vulkan)
+LDFLAGS  = $(shell pkg-config --libs glfw3 vulkan)
+
+VulkanTest: main.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
+
+.PHONY: test clean
+
+test: VulkanTest
+	./VulkanTest
+
+clean:
+	rm -f VulkanTest

@@ -1,0 +1,11 @@
+#include "../include/space.hpp"
+
+void RenderSpace(SDL_Renderer *renderer, SDL_Window *window) {
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+    SDL_RenderClear(renderer);
+    
+    IMG_Init(IMG_INIT_PNG | IMG_INIT_JPG)
+    }
+
+
+}

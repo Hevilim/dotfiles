@@ -1,0 +1,19 @@
+# Domain
+# This would be set to the production domain with an env var on deployment
+# used by Traefik to transmit traffic and aqcuire TLS certificates
+DOMAIN=localhost
+# To test the local Traefik config
+# DOMAIN=localhost.tiangolo.com
+
+# The name of the project, used in the title of the web app
+PROJECT_NAME="Bolash"
+
+# Telegram bot token
+BOT_TOKEN=7226778855:AAGHftMuZU6JDPZBTtU6h71xHKyEFCSZzYk
+
+# Postgres
+POSTGRES_SERVER=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=bolash
+POSTGRES_USER=kana
+POSTGRES_PASSWORD=A07k4rG9

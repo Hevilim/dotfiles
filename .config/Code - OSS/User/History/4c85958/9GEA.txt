@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.16)
+project(VulkanTest LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Пути к исходникам
+set(SOURCES
+    main.cpp
+)
+
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+# Ищем Vulkan
+find_package(Vulkan REQUIRED)
+
+# Ищем GLFW (только Wayland-бэкенд)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GLFW3 REQUIRED glfw3)
+
+# Линкуем всё
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${GLFW3_INCLUDE_DIRS}
+    ${Vulkan_INCLUDE_DIRS}
+)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    ${GLFW3_LIBRARIES}
+    Vulkan::Vulkan
+)
+
+# Убираем X11-зависимости (важно для Hyprland/Wayland)
+target_compile_definitions(${PROJECT_NAME} PRIVATE
+    GLFW_USE_WAYLAND
+)

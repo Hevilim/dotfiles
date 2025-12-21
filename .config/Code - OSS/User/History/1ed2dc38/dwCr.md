@@ -1,0 +1,11 @@
+
+
+
+###########################################
+
+ok-bolashak ->
+    tg-bot ->
+        bot.py
+    web-app ->
+        bolash
+        home

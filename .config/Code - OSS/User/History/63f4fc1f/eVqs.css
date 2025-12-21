@@ -1,0 +1,22 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    color: #00FFFF;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.6);
+    margin: 6px;
+    padding: 4px 10px;
+    transition: background 0.3s ease;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+#workspaces button.active {
+    background: rgba(137, 180, 250, 0.25);
+    color: #89b4fa;
+    border-radius: 8px;
+}

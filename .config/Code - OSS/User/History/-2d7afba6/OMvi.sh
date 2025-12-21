@@ -1,0 +1,1 @@
+g++ main.cpp -o space -L.SDL/build -lSDL3

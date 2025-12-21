@@ -1,0 +1,500 @@
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+./chttp_server 
+ls
+gcc chttp.c 
+ls
+sudo ufw allow 8080/tcp
+sudo pacman -S
+sudo pacman -S V
+sudo pacman -S foobar
+sudo pacman -S ufw
+sudo ufw allow 8080/tcp
+ip addr
+curl ifconfig.me
+hyprctl clients
+curl ifconfig.me
+curl ifconfig.me
+ip addr
+ping http://127.0.0.1:8080/
+ping http://127.0.0.1:8080/
+127.0.0.1:8080
+ping 127.0.0.1:8080
+ping localhost:8080
+ping localhost:8080
+ping http://localhost:8080
+ping http://localhost
+cd Development/chttp/
+ls
+./a.out 
+gcc chttp.c 
+./a.out 
+gcc chttp.c 
+./a.out 
+sudo ./a.out 
+gcc chttp.c 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+wlogout 
+yay -S ugee-tablet
+wlogout 
+sudo pacman -S cloudflare-warp-bin
+sudo pacman -Sy
+g
+cloudflared 
+warp-reboot
+reboot
+warp-cli status
+warp-cli 
+warp-cli conectr
+warp-cli connect
+warp-cli vnet
+warp
+sudo warp-svc
+wlogout 
+wlogout 
+wlogout 
+wlogout 
+echo 1
+shutdown 
+sudo pacman -Sy 
+sudo pacman -S bluez bluez-utils
+bluetoothctl 
+lsusb
+sudo pacman -S linux-firmware
+ls /lib/firmware/rtl_bt/
+bluetoothctl list
+systemctl status bluetooth
+sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
+pain
+sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
+pain
+pain
+sudo systemctl enable bluetooth.service
+ls
+su - $USER
+shutdown 
+sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+bluetoothctl 
+bluetoothctl 
+sudo systemctl restart bluetooth
+bluetooth
+bluetoothctl
+sudo modprobe -r btusb
+sudo modprobe btusb
+bluetoothctl
+bluetoothctl
+bluetoothctl
+bluetoothctl
+clear
+cd .config/
+ls
+cd hypr/
+ls
+code hyprland.conf 
+sudo pacman -S discord
+pavucontrol 
+reboot
+bluetooth
+bluetoothctl 
+code ~/.config/hypr/hyprland.conf 
+pavucontrol 
+neofetch 
+pavucontrol 
+pavucontrol 
+shutdown 
+sudo pacman -S discord
+yay -Syu discord
+yay -Sy discord
+bluetoothctl 
+pavucontrol 
+sudo pacman -S discord
+discord 
+sudo pacman -Syu
+sudo pacman -Syu
+sudo pacman -Sy archlinux-keyring
+sudo pacman -Syu
+hyprctl reload
+pavucontrol 
+pavucontrol 
+reboot
+pavu
+pavucontrol 
+code .config/hypr/hyprland.conf 
+exec-once = bluetoothctl connect E8:9E:13:BD:93:A9 
+bluetoothctl connect E8:9E:13:BD:93:A9 
+pavucontrol 
+bluetoothctl connect E8:9E:13:BD:93:A9 
+code .config/hypr/hyprland.conf 
+d bitcoin/
+ls
+cd bitcoin/
+ls
+rm -rf build/
+ls
+cmake -B build
+cmake -build build
+cmake --build build
+cd ..
+ls
+ cd bitcoin/
+ls
+cd ./build/
+ls
+ctest --test-dir build
+cd ..
+ctest --test-dir build
+clear
+./build/bin/bitcoin help
+./build/bin/bitcoin gui
+./build/bin/bitcoin wallet
+./build/bin/bitcoin wallet create
+./build/bin/bitcoin -wallet=hevilim
+./build/bin/bitcoin wallet
+./build/bin/bitcoin wallet create -wallet=hevilim
+./build/bin/bitcoin wallet create -help
+cd ..
+sl
+ls
+rm -rf build
+rm -rf bitcoin/
+sudo pacman -S obs-studio
+yay -S cloudflare-warp-bin
+warp-cli
+warp-cli connect
+ls
+cd Development/
+ls
+cd ..
+ls
+cd De
+cd Desktop/
+ls
+./Terraria.desktop 
+cd 
+cd Development/
+sl
+ls
+cd anthrax-ai/
+ls
+rm -rf build
+ls
+mkdir build
+cd build
+ks
+ls
+cmake .. -j1
+cmake ..
+make -j1
+clear
+cd .. 
+cd ..
+ls
+rm -rf anthrax-ai/
+s
+ls
+cd 
+ls
+pacman -S sqlite
+sudo pacman -S sqlite
+git clone https://github.com/bitcoin/bitcoin.git
+cd bitcoin/
+ls
+cmake -B build
+cmake --build build
+clear
+cd ..
+ls
+vim \#\*message\*-20250610-222806# 
+wa
+pkill waybar
+wabar && disown
+waybar && disown
+waybar && disown
+waybar && disow b
+code .bash_history
+code .bash_history
+sudo pacman -S bitcoin-qt
+waybar & disown
+exit
+yay -R cloudflare-warp-bin
+sudo pacman -R pgadmin
+pacman -Q
+pacman -R pgadmin4-desktop
+sudo pacman -R pgadmin4-desktop
