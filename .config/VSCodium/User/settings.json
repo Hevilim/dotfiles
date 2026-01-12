@@ -1,0 +1,17 @@
+{
+    "window.titleBarStyle": "native",
+    "window.menuStyle": "custom",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontSize",
+        "terminal.integrated.fontFamily"
+    ],
+    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace",
+    "editor.fontSize": 12,
+    "editor.lineHeight": 1.5,
+    "editor.rulers": [99],
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd', 'monospace', monospace",
+    "terminal.integrated.fontSize": 12,
+    "catppuccin-noctis-icons.hidesExplorerArrows": false
+}

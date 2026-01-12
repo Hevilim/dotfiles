@@ -1,4 +1,4 @@
-style=/home/karim/.config/wofi/style.css
+#style=/home/karim/.config/wofi/style.css
 
 show=drun
 allow_images=true

@@ -1,4 +1,0 @@
-add_executable(space)
-target_sources(space src/main.cpp)
-
-target_link_libraries(find_package(SelfPackers REQUIRED) vendor)

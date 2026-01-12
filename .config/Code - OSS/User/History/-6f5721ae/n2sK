@@ -1,7 +1,0 @@
-show=drun
-allow_images=true
-exec_always = kitty -e
-prompt= 
-location=center
-width=600
-height=500

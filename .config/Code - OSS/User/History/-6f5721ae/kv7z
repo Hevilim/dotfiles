@@ -1,3 +1,0 @@
-show=drun
-allow_images=true
-exec_always = kitty -e
