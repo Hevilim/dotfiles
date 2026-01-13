@@ -2,7 +2,6 @@
 
 show=drun
 allow_images=true
-exec_always=kitty -e
 
 width=600
 height=400
@@ -19,3 +18,4 @@ insensitive=true
 allow_images=true
 image_size=40
 gtk_dark=true
+layer=overlay

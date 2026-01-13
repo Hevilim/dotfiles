@@ -1,20 +1,27 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top", // Waybar at top layer
-    // "margin": "0 0 0 0",
+    "margin": "8 8 0 8",
     "fixed-center": true,
     "reload_style_on_change": true,
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    // "height": 42, // Waybar height (to be removed for auto height)
+    "height": 46, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
     "include": ["~/.config/waybar/modules.jsonc"],
 
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/cava"
     ],
     "modules-center": [
+        "hyprland/language",
+        "clock",
+        "temperature",
+        "memory",
+        "cpu"
+
     ],
     "modules-right": [
         // "mpd",
@@ -22,16 +29,59 @@
         // "pulseaudio",
         // "network",
         // "power-profiles-daemon",
-        // "cpu",
-        // "memory",
-        // "temperature",
         // "backlight",
         // "keyboard-state",
-        "hyprland/language",
         // "battery",
         // "battery#bat2",
-        "clock",
+
         // "tray"
         "custom/power"
-    ]
+    ],
+
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": []
+        }
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": " {used:0.1f} GiB"
+        // "format-warning": " {used:0.1f} GiB",
+        // "format-critical": " {used:0.1f} GiB",
+        // "states": {
+        //     "warning": 5,
+        //     "critical": 90
+        // }
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format": " {temperatureC}°C",
+    },
+    "custom/power": {
+        "format" : "⏻ ",
+		"tooltip": false,
+		"on-click": "wlogout"
+    },
+    "custom/cava": {
+        "exec": "~/.config/waybar/cava.sh",
+        "tooltip": false,
+        "restart-interval": 1
+    },
+    "hyprland/language": {
+    "format-en": "us",
+    "format-ru": "ru"
+}
 }
