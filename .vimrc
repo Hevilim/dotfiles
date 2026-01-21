@@ -10,3 +10,5 @@ colorscheme catppuccin_mocha
 set number
 syntax enable
 set tabstop=4
+set nocopyindent
+filetype indent off

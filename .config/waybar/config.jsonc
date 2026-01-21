@@ -12,8 +12,7 @@
 
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "custom/cava"
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "hyprland/language",
@@ -33,30 +32,25 @@
         // "keyboard-state",
         // "battery",
         // "battery#bat2",
-
-        // "tray"
+        "tray",
         "custom/power"
     ],
 
 
     "hyprland/workspaces": {
-        "format": "{id}",
-        "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": []
-        }
+        "format": "{id}"
+    },
+    "clock": {
+        "format": "| {:%a; %b %d, %I:%M %p} |",
+        "tooltip": false
     },
     "cpu": {
         "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": " {used:0.1f} GiB"
+        "format": " {used:0.1f} GiB",
+        "tooltip": false
         // "format-warning": " {used:0.1f} GiB",
         // "format-critical": " {used:0.1f} GiB",
         // "states": {
@@ -69,6 +63,7 @@
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         "format": " {temperatureC}°C",
+        "tooltip": false
     },
     "custom/power": {
         "format" : "⏻ ",

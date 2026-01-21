@@ -1,19 +1,17 @@
 #window {
-    font-family: "JetBrainsMono Nerd Font", monospace;
-    font-size: 20px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    font-family: "Noto Sans", monospace;
+    font-size: 18px;
+    color: #cdd6f4;
     border-radius: 0;
 }
 #input {
     border-radius: 0;
     padding: 0.8rem 1rem;
-    font-size: 1.5rem;
 }
 #entry {
     padding: 0.6rem 1rem;
     border-radius: 0;
 }
 #img {
-    width: 1rem;
     margin-right: 1rem;
 }
