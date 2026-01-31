@@ -1,10 +1,21 @@
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
+    border-radius: 0;
+    border: 0;
     font-size: 18px;
     color: #cdd6f4;
 }
 
-#workspaces {
+#custom-power {
+    font-size: 25px;
+    margin: 5px 8px;
+    color: #e64553;
+    background-color: #313244;
+    padding: 0 8px 0 6px;
+    border-radius: 1rem;
+}
+
+/* #workspaces {
     margin: 5px;
 }
 #workspaces button {
@@ -13,43 +24,40 @@
     box-shadow: none;
     background: transparent;
     transition: all 0.1s ease;
-}
-#workspaces button.active {
-    border-bottom: 2px solid #f5e0dc;
-}
-#workspaces button:hover {
-    border-bottom: 2px solid #f5e0dc;
-}
+} */
 
-#custom-power {
-    margin: 5px;
-    border: none;
-    color: #f38ba8;
-    font-size: 24px;
-    background: transparent;
-}
-
-#custom-cava {
-    font-size: 20px;
-    margin: 8px 50px;
-    padding: 0 10px;
-}
-#language {
-    font-weight: bold;
-    padding: 0 10px;
-}
-#clock {
-    padding: 0 10px;
-}
 #temperature {
-    padding: 0 10px;
-    color: #89b4fa;
+    padding: 8px;
+    color: #89b4fa; 
 }
+
 #memory {
-    padding: 0 10px;
+    padding: 8px;
     color: #a6e3a1;
 }
+
 #cpu {
-    padding: 0 10px;
+    padding: 8px;
     color: #bac2de;
 }
+
+#language {
+    font-weight: bold;
+    padding: 8px;
+}
+
+#network {
+    padding: 8px;
+}
+
+#backlight {
+    padding: 8px;
+}
+
+#battery {
+    padding: 8px;
+}
+
+#clock {
+    padding: 8px;
+} 
