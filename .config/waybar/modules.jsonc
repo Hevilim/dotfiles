@@ -1,4 +1,8 @@
 {
+    "hyprland/language": {
+        "format-en": "us",
+        "format-ru": "ru"
+    },
     "custom/power": {
         "format" : "󰐥",
         "tooltip": false,
@@ -38,10 +42,6 @@
         //     "critical": 90
         // }
     },
-    "hyprland/language": {
-        "format-en": "us",
-        "format-ru": "ru"
-    },
     "cpu": {
         "format": " {usage}%",
         "tooltip": false
@@ -58,19 +58,32 @@
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
+    "pulseaudio": {
+        "scroll-step": 0.2,
+        "format": "{format_source} {icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "default": ["", "", ""],
+            "headphone": ""
+        },
+        "on-click": "pavucontrol"
+    },
     "battery": {
-        "states": {
+        // "states": {
             // "good": 95,
             // "warning": 30,
             // "critical": 15
-        },
+        // },
         "format": "{icon} {capacity}%",
-        "format-full": "{icon} {capacity}%",
-        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        }
     },
     "clock": {
         "format": "{:%a %b %d %I:%M %p}",

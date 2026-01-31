@@ -5,7 +5,7 @@
     "fixed-center": true,
     "reload_style_on_change": true,
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 45, // Waybar height (to be removed for auto height)
+    "height": 36, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
     "include": ["~/.config/waybar/modules.jsonc"],
@@ -16,14 +16,13 @@
         "hyprland/workspaces"
         // "wlr/taskbar"
     ],
-    "modules-center": [        
-        "temperature",
-        "memory",
-        "cpu"
-        // "battery#usbc"
-    ],
+    // "modules-center": [        
+    // ],
     "modules-right": [
         "hyprland/language",
+        "temperature",
+        "memory",
+        "cpu",
         "network",
         // "mpd",
         // "idle_inhibitor",
@@ -33,6 +32,7 @@
         // "tray",
         // "custom/media",
         "backlight",
+        "pulseaudio",
         "battery",
         "clock"
     ]

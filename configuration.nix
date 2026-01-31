@@ -122,7 +122,8 @@
         set number
         set relativenumber
         set tabstop=4 
-		    set mouse=a
+        set mouse=a
+        autocmd FileType nix setlocal tabstop=2
       '';
     };
   };
@@ -139,46 +140,48 @@
 
   # a b c d e f g h i j k l m n o p q r s t u v w x y z
   environment.systemPackages = with pkgs; [
-    wget
-    curl
-    git
-    htop
-    kitty
-    vscodium
-    hyprpaper
-    wofi
-    wev
-    wlogout
-    file
-    nwg-look
+    #sommelier
     bibata-cursors
-    wl-clipboard
-    wl-clip-persist
-    cliphist
+    bluez
     brightnessctl
-    telegram-desktop
+    cliphist
+    conda
+    curl
+    distrobox
     fastfetch
-    kdePackages.kdenlive
-    yandex-music
-    vesktop
-    python3
-    gcc
-    kittysay
-    stow
-    inkscape
-    muvm
     fex
+    file
+    gcc
+    git
+    grim
+    htop
+    hyprpaper
+    inkscape
+    jdk
+    kdePackages.kdenlive
+    kitty
+    kittysay
+    muvm
+    nwg-look
+    obsidian
+    python3
     qemu
     qemu-utils
-    obsidian
-    bluez
-    jdk
-    conda
-    grim
     slurp
-    distrobox
+    stow
+    telegram-desktop
+    vesktop
+    vscodium
+    wev
+    wget
+    wl-clip-persist
+    wl-clipboard
+    wlogout
+    wofi
     xorg.xhost
-    #sommelier
+    yandex-music
+		pavucontrol
+		walker
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
