@@ -2,15 +2,14 @@
     font-family: "JetBrainsMono Nerd Font", monospace;
     border-radius: 0;
     border: 0;
-    font-size: 14px;
+    font-size: 13px;
     color: #cdd6f4;
 }
 
 #custom-power {
-    font-size: 22px;
     margin: 2px 3px;
-    color: #e64553;
-    background-color: #313244;
+    font-size: 18px;
+    font-weight: bold;
     padding: 0 5px 0 3px;
     border-radius: 1rem;
 }
@@ -26,19 +25,14 @@
     transition: all 0.1s ease;
 } */
 
-#temperature {
-    padding: 8px;
-    /* color: #89b4fa;  */
-}
+/* 
 
 #memory {
     padding: 8px;
-    /* color: #a6e3a1; */
 }
 
 #cpu {
     padding: 8px;
-    /* color: #bac2de; */
 }
 
 #language {
@@ -64,4 +58,4 @@
 
 #clock {
     padding: 8px;
-} 
+}  */

@@ -1,8 +1,12 @@
 #window {
     font-family: "Noto Sans", monospace;
     font-size: 18px;
-    color: #cdd6f4;
+    background-color: rgba(30, 31, 41, 0.99);
+    border: none;
     border-radius: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: 30px;
 }
 #input {
     border-radius: 0;

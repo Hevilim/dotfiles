@@ -3,7 +3,7 @@
 show=drun
 allow_images=true
 
-width=600
+width=550
 height=400
 location=center
 prompt=

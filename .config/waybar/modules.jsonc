@@ -17,7 +17,7 @@
             "enable": true,
             "update-active-window": true,
             "format": "{icon}",
-            "icon-size": 18
+            "icon-size": 16
         }
     },
     // "custom/cava": {
@@ -86,7 +86,7 @@
         }
     },
     "clock": {
-        "format": "{:%a %b %d %I:%M %p}",
+        "format": "{:%a %b %d %H:%M}",
         "tooltip": false
     }
 
