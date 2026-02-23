@@ -85,9 +85,9 @@
 		};
 	};
 
-	virtualisation.libvirtd.enable = true;
-	programs.virt-manager.enable = true;
+	virtualisation.podman.enable = true;
 	boot.binfmt.emulatedSystems = [ "x86_64-linux" ];
+	boot.binfmt.registrations."x86_64-linux".fixBinary = true;
 
 	virtualisation.docker = {
 		enable = true;
@@ -128,6 +128,7 @@
 		nerd-fonts.jetbrains-mono
 		nerd-fonts.dejavu-sans-mono
 		source-code-pro
+		nerd-fonts.sauce-code-pro
 		noto-fonts
 		pixel-code
 	];
@@ -135,6 +136,7 @@
 	services.displayManager.sddm = {
 		enable = true;
 		wayland.enable = true;
+		wayland.compositor = "weston";
 		theme = "${pkgs.sddm-astronaut.override { embeddedTheme = "hyprland_kath"; }}/share/sddm/themes/sddm-astronaut-theme";
 		extraPackages = with pkgs; [
 			(sddm-astronaut.override { embeddedTheme = "hyprland_kath"; })
@@ -153,34 +155,31 @@
 		};
 	};
 
-	programs.vim = {
-	enable = true;
-	defaultEditor = true;
-	package = pkgs.vim.customize {
-		name = "vim";
-		# Install plugins for example for syntax highlighting of nix files
-		vimrcConfig.packages.myplugins = with pkgs.vimPlugins; {
-			start = [ 
-				catppuccin-vim 
-				gruvbox
-			];
-			opt = [];
-		};
-		vimrcConfig.customRC = ''
-			set nocompatible
-			set backspace=indent,eol,start
-			set termguicolors
-			colorscheme catppuccin_mocha
-			syntax on
-			set number
-			set relativenumber
-			set tabstop=2 
-			set mouse=a
-			autocmd FileType nix setlocal tabstop=2
-		'';
+	programs.neovim = {
+		enable = true;
+		defaultEditor = true;
+		viAlias = true;
+  	vimAlias = true;
+		configure = {
+			customRC = ''
+		  		set nocompatible
+				set backspace=indent,eol,start
+				set termguicolors
+				colorscheme catppuccin_mocha
+				syntax on
+				set number
+				set relativenumber
+				set tabstop=2 
+				set mouse=a
+				autocmd FileType nix setlocal tabstop=2
+				let &t_SI = "\e[6 q"
+				let &t_EI = "\e[2 q" 
+				let &t_SR = "\e[4 q"
+			'';
 		};
 	};
 
+	programs.nix-ld.enable = true;
 	programs.hyprland = {
 		enable = true;
 		xwayland.enable = true;
@@ -198,8 +197,8 @@
 
 	# a b c d e f g h i j k l m n o p q r s t u v w x y z
 	environment.systemPackages = with pkgs; [
+		ffmpeg
 		asahi-audio
-		erofs-utils
 		cisco-packet-tracer_9
 		squashfuse
 		squashfsTools
@@ -216,6 +215,8 @@
 		conda
 		curl
 		distrobox
+		podman
+		coreutils
 		fastfetch
 		fex
 		file
